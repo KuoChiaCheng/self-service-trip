@@ -2,7 +2,7 @@ function LineChart()
 {
 	var width  = 460;
 	var height = 268;
-	dataPath = 'https://kuochiacheng.github.io/self-service-trip/';
+	dataPath = 'https://kuochiacheng.github.io/self-service-trip/Rdata/';
 	dataFile = 'outputV2.csv';
 	dataUrl = dataPath + dataFile;
 
