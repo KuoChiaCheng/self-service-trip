@@ -18,7 +18,8 @@ d3.csv(dataUrl, function(data) {
 	//定義freq畫線的規則
 	var linesFreq = d3.line().
 	x(function(d,i){ return i * (width/ln); }).  //寬值平均分配
-	y(function(d){ return height - d.Freq * (height/maxFreq); });
+	y(function(d){ return height - d.freq * (height/maxFreq); });
+
 	//開始freq畫線
 	ctrl.append("path").data([data]).
 	attr("class", "pathline").  //補上pathline屬性讓CSS控制
