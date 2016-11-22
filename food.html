@@ -5,7 +5,9 @@
 	<meta charset="UTF-8">
 	<title>Cottages - Beach Resort Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://kuochiacheng.github.io/self-service-trip/D3CSS.css" type="text/css">
 	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://kuochiacheng.github.io/self-service-trip/D3JS.js"></script>
 </head>
 <body>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"> </script>
@@ -30,8 +32,14 @@
 				<div class="header">
 					<img src="images/cottage.jpg" alt="">
 				</div>
+				<!-- 詞雲 by 劉宇哲-->
+				<div id="body">
+				<h2>詞雲</h2>
+				<div id='wordcloud'></div>
+				</div>
+				<!-- 橫條圖 by 劉宇哲-->
 				<div class="section">
-					<h2>夜市美食推薦</h2>
+					<h2>橫條圖</h2>
 					<p></p>
 					<script>
       					var pop_rate = [['景美',28.26],['士林',27.48],['師大',20.01],['三和',10.84]];
@@ -49,11 +57,16 @@
     					 return (d[1] * 10)+"px";
   						});
   					</script>
-				
+				</div>
+				<!-- 折線圖 by 郭家城 -->
+				<div>
+					<div class="article" id="kuo"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+<script>
+LineChart();
+</script>	
 </body>
 </html>
