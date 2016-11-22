@@ -1,4 +1,4 @@
-function LineChart()
+function linechart()
 {
 	var width  = 460;
 	var height = 268;
