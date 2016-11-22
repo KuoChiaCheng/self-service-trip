@@ -3,7 +3,7 @@ function linechart()
 	var width  = 460;
 	var height = 268;
 	dataPath = 'https://kuochiacheng.github.io/self-service-trip/Rdata/';
-	dataFile = 'output1.csv';
+	dataFile = 'outputV2.csv';
 	dataUrl = dataPath + dataFile;
 
 d3.csv(dataUrl, function(data) {
