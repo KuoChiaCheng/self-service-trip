@@ -13,7 +13,7 @@ d3.csv(dataUrl, function(data) {
 	});
 	var maxSize = d3.max(data, function(d) { return d.size; });
 	var ln = data.length;
-	var ctrl  = d3.select("#kuo").append("svg").attr("width", width).attr("height", height);
+	var ctrl  = d3.select("#linechart").append("svg").attr("width", width).attr("height", height);
 	//定義size畫線的規則
 	var linesSize = d3.line().
 	x(function(d,i){ return i * (width/ln); }).  //寬值平均分配

@@ -33,15 +33,13 @@
 			<div id="content">
 				
 				<!-- 詞雲 by 劉宇哲-->
-				<div class="section" id="body">
+				<div class="section" id="wordcloud">
 				<h2>詞雲</h2>
-				<div id='wordcloud'></div>
 				</div>
 				<!-- 橫條圖 by 劉宇哲-->
 				
 				<div class="section" id="barchart">
 					<h2>橫條圖</h2>
-					<p></p>
 					<script>
       					var pop_rate = [['景美',28.26],['士林',27.48],['師大',20.01],['三和',10.84]];
   						var div_data_bind = d3.select("#barchart").selectAll("div").data(pop_rate);
@@ -61,9 +59,8 @@
 				</div>
 				
 				<!-- 折線圖 by 郭家城 -->
-				<div class="section">
+				<div class="section" id="linechart">
 					<h2>折線圖</h2>
-					<div id="kuo"></div>
 				</div>
 			</div>
 		</div>
