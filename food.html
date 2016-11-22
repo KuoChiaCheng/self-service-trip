@@ -39,12 +39,12 @@
 				</div>
 				<!-- 橫條圖 by 劉宇哲-->
 				
-				<div class="section">
+				<div class="section" id="barchart">
 					<h2>橫條圖</h2>
 					<p></p>
 					<script>
       					var pop_rate = [['景美',28.26],['士林',27.48],['師大',20.01],['三和',10.84]];
-  						var div_data_bind = d3.select(".section").selectAll("div").data(pop_rate);
+  						var div_data_bind = d3.select("#barchart").selectAll("div").data(pop_rate);
   						div_set = div_data_bind.enter().append("div");
   						div_data_bind.exit().remove();
   						div_set.text(function(d,i) {
