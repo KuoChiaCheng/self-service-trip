@@ -21,7 +21,8 @@ d3.csv(dataUrl, function(data) {
 	y(function(d){ return height - d.Freq * (height/maxFreq); });
 	//開始freq畫線
 	ctrl.append("path").data([data]).
-	attr("class", "pathline")  //補上pathline屬性讓CSS控制
+	attr("class", "pathline").  //補上pathline屬性讓CSS控制
+	attr("d", linesFreq);
 });
 
 }
